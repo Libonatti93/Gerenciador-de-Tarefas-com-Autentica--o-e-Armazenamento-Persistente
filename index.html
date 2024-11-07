@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Senha">
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Registrar</button>
+    </div>
+
+    <div id="taskManager" style="display: none;">
+        <h2>Bem-vindo(a)</h2>
+        <button onclick="logout()">Sair</button>
+        
+        <h3>Adicionar Tarefa</h3>
+        <input type="text" id="taskTitle" placeholder="Título">
+        <input type="text" id="taskDescription" placeholder="Descrição">
+        <button onclick="addTask()">Adicionar Tarefa</button>
+
+        <h3>Tarefas</h3>
+        <div id="taskContainer"></div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="tasks.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
